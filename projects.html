@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Projects</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+
+    <style>
+
+
+        body {
+            background-image: url('projectbg copy.png');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .header {
+            color: #332121;
+            text-decoration: none;
+            position: absolute;
+            font-family:'michroma';
+            top: 15px;
+            left:30px;
+            width 20;
+            font-size: 16px;
+            z-index: 2;
+          }
+        .title {
+          position: absolute;
+          top: 130px;
+          left:490px;
+          font-size: 40px;
+          font-family:'michroma';
+          color: #332121;
+          z-index: 1;
+        }
+
+        .nav-buttons {
+          position:absolute;
+          top: 30px;
+          right: 50px;
+            display: flex;
+            gap: 20px;
+
+        }
+
+        .nav-button {
+            padding: 10px 20px;
+            color: #332121;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            font-family: 'michroma';
+        }
+
+        .video-container {
+            max-width: 1000px;
+            background-color: #332121;
+        }
+
+        video {
+            display: block;
+            width: 712px;
+            height: 326px;
+            max-width: 100%;
+        }
+        .oval {
+            width: 204px;
+            height: 55px;
+            background-color: #573D31;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 50px;
+            left:625px;
+            cursor: pointer;
+        }
+        .about{
+          bottom: 50px;
+          left:625px;
+          font-size: 15px;
+          font-family:michroma;
+          text-decoration: none;
+          color: #FFFFFF;
+          z-index: 1;
+        }
+    </style>
+</head>
+<body>
+  <div class="header"><a href="Assignment1.html" class="header"><h1>HAZ<h1></a></div>
+
+  <div class="title">MOM'S ADVICES</div>
+
+<div class="oval"> <a href="about.html" class="about">ABOUT</a></div>
+
+<div class="nav-buttons">
+            <a href="projects.html" class="nav-button">PROJECTS</a>
+            <a href="contact.html" class="nav-button">CONTACTS</a>
+</div>
+
+    <div class="video-container">
+        <video controls>
+            <source src="30MFF_Group1 copy.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
+</html>

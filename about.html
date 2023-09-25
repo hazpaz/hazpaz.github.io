@@ -1,0 +1,229 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>about</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+            margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          background-color: #8E6858;
+          background-size: 100% 100%;
+          overflow: hidden;
+          font-family:michroma;
+
+        }
+
+
+         .quote
+        {
+
+
+          justify-content: center;
+          align-items: center;
+		      position: fixed;
+		      z-index: 2;
+          font-size: 14px;
+          font-family:michroma;
+          color: #8E6858;
+          left: 1000px;
+          top: 120px;
+
+
+	  }
+
+	    .quote1
+	  {
+      position: fixed;
+		  z-index: 2;
+      font-size: 14px;
+      font-family:michroma;
+      color: #8E6858;
+      left: 1000px;
+      bottom: 150px;
+
+	  }
+
+	  .popup {
+			position: right;
+			z-index: 2;
+			width: 100%;
+			breadth: 100%;
+			overflow: auto;
+			background-color: rgba(0, 0, 0, 0);
+			display: none;
+		}
+
+
+		.popup-content {
+		      width: 763px;
+          height: 394px;
+          background-color: #3E2F2F;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: center;
+
+		}
+
+
+		.popup-content button {
+			display: block;
+			margin: 0 auto;
+		}
+
+
+		.show {
+			display: flex;
+		}
+		h1 {
+			color: white;
+      cursor: pointer;
+		}
+		.box-close {
+			position: absolute;
+			top: 100px;
+			right: 155px;
+			color: #fe0606;
+			text-decoration: none;
+			font-size: 30px;
+		}
+
+
+      .header {
+          color: #FFFFFF;
+          text-decoration: none;
+          position: absolute;
+          font-family:michroma;
+          top: 15px;
+          left:30px;
+          width 20;
+          font-size: 16px;
+          z-index: 2;
+        }
+
+
+
+      .about {
+          font-size: 14px;
+          font-family:michroma;
+          color: #FFF;
+          z-index: 1;
+      }
+      .nav-buttons {
+          position:absolute;
+          top: 30px;
+          right: 50px;
+          display: flex;
+          gap: 20px;
+
+      }
+
+      .nav-button {
+          padding: 10px 20px;
+          font-color: #FFFFFF;
+          text-decoration: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 12px;
+          font-family: michroma;
+      }
+    </style>
+</head>
+<body>
+  <div class="header"><a href="Assignment1.html" class="header"><h1>HAZ<h1></a></div>
+    <h1 id="myButton">
+		<a title="Click here!">M O T H E R.</a>
+		</h1>
+		<div class="quote"><h3 id="quoteId"><center>“Your mother's wisdom is <br> priceless, so don't take it <br>for granted.”</center></h3></div>
+		<div class="quote1"><h3 id="quoteId1"><center>“Your mother is your biggest cheerleader,<br> so listen to what she has to say”</center></h3></div>
+	<div id="myPopup" class="popup">
+
+       <div class="popup-content">
+		 <div class="about"><center><h1>Mother</h1></center>
+        <center>
+           They play a crucial role in our lives, providing guidance, nurturing, and <br>
+          unconditional love from birth. Their wisdom and experience are invaluable,<br>
+         and their intuition guides them in delivering practical advice. Their wisdom <br>
+         resonates with us even years later, making their advice practical and filled with<br>
+          love and care. Mothers shape our values and character, helping us navigate life's <br>
+          challenges, make important decisions, and grow into responsible individuals. <br>
+          Therefore, we should cherish and appreciate their advice, as it shapes <br>
+          our character and helps us navigate life's challenges.</center>
+           </div>
+
+	 		</h1>
+	   <h1 id="closePopup">
+	 	   <div class="box-close">
+				×
+	       </div>
+				<h1>
+		 </div>
+	    </div>
+	    </div>
+
+
+    <div class="nav-buttons">
+                <a href="projects.html" class="nav-button"><font color="#FFFFFF">PROJECTS</font></a>
+                <a href="contact.html" class="nav-button"><font color="#FFFFFF">CONTACTS</font></a>
+    </div>
+
+
+
+
+<script>
+
+		//javascript
+
+		myButton.addEventListener("click", function () {
+			myPopup.classList.add("show");
+			const box = document.getElementById('myButton');
+			myButton.style.color = '#8E6858';
+
+		});
+
+		myButton.addEventListener("click", function () {
+			const box = document.getElementById('quoteId');
+			quoteId.style.color='#FFFFFF';
+
+	});
+
+	   myButton.addEventListener("click", function () {
+			const box = document.getElementById('quoteId1');
+			quoteId1.style.color='#FFFFFF';
+
+	});
+		closePopup.addEventListener("click", function () {
+			const box = document.getElementById('ClosePopup');
+			myPopup.classList.remove("show");
+			myButton.style.color = '#FFFFFF';
+
+		});
+
+		closePopup.addEventListener("click", function () {
+			const box = document.getElementById('quoteId');
+			quoteId.style.color='#8E6858';
+
+		});
+
+		closePopup.addEventListener("click", function () {
+			const box = document.getElementById('quoteId1');
+			quoteId1.style.color='#8E6858';
+
+		});
+
+</script>
+</body>
+</html>
